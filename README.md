@@ -1,7 +1,7 @@
 # dotfiles
 
 ```
-git clone --bare https://github.com/jspspike/dotfiles.git
+git clone --bare https://github.com/jspspike/dotfiles.git $HOME/.cfg
 function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
