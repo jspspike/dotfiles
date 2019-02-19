@@ -1,5 +1,7 @@
 # dotfiles
 
+A repo to handle config files. Uses a bare repo to easily download and place files into necessary locations. Script below taken from [Pin3appl3/dotfiles](https://github.com/P1n3appl3/dotfiles) to download dotfiles, set up `config` alias to interact with git repo and hide untracked files
+
 ```
 git clone --bare https://github.com/jspspike/dotfiles.git $HOME/.cfg
 function config {
