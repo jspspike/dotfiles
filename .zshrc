@@ -111,3 +111,7 @@ PATH=$PATH:~/.local/bin
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 alias xopen='xdg-open'
+alias vi=nvim
+alias vimconfig="vi ~/.config/nvim/init.vim"
+alias zshconfig="vi ~/.zshrc"
+alias i3config="vi ~/.i3/config"
