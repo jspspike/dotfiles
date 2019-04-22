@@ -53,3 +53,6 @@ map j gk
 map <silent> <leader>/ :nohl<CR>
 map <leader>t :lopen<CR>
 map <leader>T :lclose<CR>
+
+autocmd Filetype c setlocal shiftwidth=2 
+autocmd Filetype h setlocal shiftwidth=2 
