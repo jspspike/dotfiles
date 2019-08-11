@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/jspspike/.oh-my-zsh
+export ZSH=/home/jspspike/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -63,8 +63,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -93,10 +92,6 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias get_esp32='export PATH="$HOME/Programs/esp/xtensa-esp32-elf/bin:$PATH"'
-export PATH="$HOME/Programs/esp/xtensa-esp32-elf/bin:$PATH"
-
-export IDF_PATH="~/Projects/Clubs/Micromouse/esp-idf"
 
 function repeats {
   while ! "${@}"; do : ; done
