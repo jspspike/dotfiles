@@ -26,6 +26,8 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'Shougo/echodoc.vim'
 
+Plug 'cespare/vim-toml'
+
 call plug#end()
 
 "let g:deoplete#enable_at_startup = 1
@@ -48,8 +50,8 @@ set autoread
 
 let mapleader = ','
 map <silent> s <Plug>(easymotion-s2)
-map k gj
-map j gk
+"map k gj
+"map j gk
 map <silent> <leader>/ :nohl<CR>
 map <leader>t :lopen<CR>
 map <leader>T :lclose<CR>
