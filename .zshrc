@@ -110,3 +110,11 @@ alias vi=nvim
 alias vimconfig="vi ~/.config/nvim/init.vim"
 alias zshconfig="vi ~/.zshrc"
 alias i3config="vi ~/.i3/config"
+
+export TERMINAL=alacritty
+export EDITOR=nvim
+export VISUAL=nvim
+
+function rm {
+  mv "${@}" /tmp
+}
