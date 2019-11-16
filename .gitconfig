@@ -1,0 +1,8 @@
+[user]
+	email = jspspike@gmail.com
+	name = jspspike
+	signingkey = 3DC5510422A9A1B1
+[commit]
+	gpgsign = false
+[core]
+    pager = delta --dark --plus-color="#012800" --minus-color="#340001" --theme="OneHalfDark"
