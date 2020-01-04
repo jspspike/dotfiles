@@ -18,6 +18,7 @@ message/rfc822=userapp-Thunderbird.desktop
 application/pdf=epdfview.desktop
 application/x-bittorrent=deluge.desktop
 x-scheme-handler/tg=telegramdesktop.desktop
+x-scheme-handler/mailspring=mailspring.desktop
 
 [Added Associations]
 image/jpeg=viewnior.desktop;gpicview.desktop;
@@ -27,3 +28,4 @@ x-scheme-handler/mailto=userapp-Thunderbird.desktop;
 message/rfc822=userapp-Thunderbird.desktop;
 application/pdf=epdfview.desktop;
 application/x-bittorrent=deluge.desktop;
+image/vnd.dxf=viewnior.desktop;
