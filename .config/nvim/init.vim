@@ -1,16 +1,10 @@
 set number
 call plug#begin()
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
-Plug 'zchee/deoplete-jedi'
 Plug 'w0rp/ale'
+
+Plug 'junegunn/fzf.vim'
+let g:fzf_layout = { 'down': '~20%' }
 
 " make your life better in general
 Plug 'easymotion/vim-easymotion'
@@ -28,15 +22,15 @@ Plug 'Shougo/echodoc.vim'
 
 Plug 'cespare/vim-toml'
 
-call plug#end()
+"Completion
 
-"let g:deoplete#enable_at_startup = 1
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
 
 set completeopt-=preview
 set cmdheight=2
 au VimEnter * EchoDocEnable
-
-"autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 let g:airline_theme = 'dark'
 
@@ -50,8 +44,6 @@ set autoread
 
 let mapleader = ','
 map <silent> s <Plug>(easymotion-s2)
-"map k gj
-"map j gk
 map <silent> <leader>/ :nohl<CR>
 map <leader>t :lopen<CR>
 map <leader>T :lclose<CR>
