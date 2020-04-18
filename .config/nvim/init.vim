@@ -4,7 +4,6 @@ call plug#begin()
 Plug 'w0rp/ale'
 
 Plug 'junegunn/fzf.vim'
-let g:fzf_layout = { 'down': '~20%' }
 
 " make your life better in general
 Plug 'easymotion/vim-easymotion'
@@ -28,8 +27,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-set completeopt-=preview
-set cmdheight=2
+"call fzf#run({'sink': 'tabedit'})
+
 au VimEnter * EchoDocEnable
 
 let g:airline_theme = 'dark'
@@ -48,5 +47,22 @@ map <silent> <leader>/ :nohl<CR>
 map <leader>t :lopen<CR>
 map <leader>T :lclose<CR>
 
+map <leader>C :call fzf#run({
+\   'down': '20%',
+\   'sink': 'tabedit' })<CR>
+
 autocmd Filetype c setlocal shiftwidth=2 
 autocmd Filetype h setlocal shiftwidth=2 
+
+set cmdheight=2
+
+set hidden
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
