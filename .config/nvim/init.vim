@@ -27,8 +27,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-"call fzf#run({'sink': 'tabedit'})
-
 au VimEnter * EchoDocEnable
 
 let g:airline_theme = 'dark'
