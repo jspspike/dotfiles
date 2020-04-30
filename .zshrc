@@ -64,6 +64,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -97,7 +98,9 @@ function repeats {
   while ! "${@}"; do : ; done
 }
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#fzf
+[[ $- == *i* ]] && source "/usr/share/fzf/completion.zsh" 2> /dev/null
+source "/usr/share/fzf/key-bindings.zsh"
 
 setxkbmap -option caps:escape
 
