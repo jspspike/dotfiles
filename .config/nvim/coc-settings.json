@@ -2,6 +2,7 @@
   "coc.preferences.extensionUpdateCheck": "never",
   "codeLens.enable": true,
   "suggest.enablePreview": true,
+  "suggest.maxCompleteItemCount": 10,
   "diagnostic.errorSign": "✖",
   "diagnostic.warningSign": "➤",
   "rust-analyzer.cargo-watch.command": "clippy",
@@ -10,7 +11,7 @@
       "command": "clangd",
       "args": ["--background-index"],
       "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".git/"],
-      "filetypes": ["c", "cpp"]
+      "filetypes": ["c", "cpp", "cu"]
     },
     "bash": {
       "command": "bash-language-server",
