@@ -122,3 +122,6 @@ export VISUAL=nvim
 function rm {
   mv "${@}" /tmp
 }
+
+eval "$(ssh-agent -s)" > /dev/null
+ssh-add ~/.ssh/key/key > /dev/null 2> /dev/null
