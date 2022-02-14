@@ -17,7 +17,7 @@ x-scheme-handler/mailto=userapp-Thunderbird.desktop
 message/rfc822=userapp-Thunderbird.desktop
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
 application/x-bittorrent=deluge.desktop
-x-scheme-handler/tg=telegramdesktop.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-8BP850.desktop
 x-scheme-handler/mailspring=mailspring.desktop
 
 [Added Associations]
@@ -26,7 +26,7 @@ image/png=firefox.desktop;viewnior.desktop;gpicview.desktop;
 text/plain=mousepad.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird.desktop;
 message/rfc822=userapp-Thunderbird.desktop;
-application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+application/pdf=firefox.desktop;org.pwmt.zathura-pdf-mupdf.desktop;
 application/x-bittorrent=deluge.desktop;
 image/vnd.dxf=viewnior.desktop;
 x-scheme-handler/http=firefox.desktop;
@@ -40,3 +40,4 @@ application/x-extension-shtml=firefox.desktop;
 application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-8BP850.desktop;

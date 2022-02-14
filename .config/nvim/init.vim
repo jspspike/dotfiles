@@ -27,7 +27,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-au VimEnter * EchoDocEnable
+set cmdheight=2
+let g:echodoc_enable_at_startup = 1
 
 let g:airline_theme = 'dark'
 
@@ -51,8 +52,6 @@ map <leader>C :call fzf#run({
 
 autocmd Filetype c setlocal shiftwidth=2 
 autocmd Filetype h setlocal shiftwidth=2 
-
-set cmdheight=2
 
 set hidden
 
