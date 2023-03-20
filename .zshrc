@@ -111,7 +111,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias xopen='xdg-open'
 alias vi=nvim
 alias ls="exa --oneline --long --icons"
-alias vimconfig="vi ~/.config/nvim/init.vim"
+alias vimconfig="vi ~/.config/nvim/init.lua"
 alias zshconfig="vi ~/.zshrc"
 alias i3config="vi ~/.i3/config"
 

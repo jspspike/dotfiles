@@ -1,25 +1,11 @@
 set number
 call plug#begin()
 
-Plug 'w0rp/ale'
-
-Plug 'junegunn/fzf.vim'
-
 " make your life better in general
-Plug 'easymotion/vim-easymotion'
 let g:EasyMotion_smartcase = 1
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
 
 " vim doesn't have to be ugly
-Plug 'morhetz/gruvbox'
 let g:gruvbox_contrast_dark = 'hard'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-Plug 'Shougo/echodoc.vim'
-
-Plug 'cespare/vim-toml'
 
 "Completion
 

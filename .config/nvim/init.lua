@@ -7,6 +7,19 @@ require('packer').startup(function()
   use 'simrat39/rust-tools.nvim'
   use {'nvim-telescope/telescope.nvim',   requires =  {'nvim-lua/plenary.nvim'} }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
+  use 'vim-airline/vim-airline'
+  use 'vim-airline/vim-airline-themes'
+  use 'davidgranstrom/nvim-markdown-preview'
+  use 'w0rp/ale'
+  use 'junegunn/fzf.vim'
+  use 'easymotion/vim-easymotion'
+  use 'jiangmiao/auto-pairs'
+  use 'Shougo/echodoc.vim'
+  use 'cespare/vim-toml'
+  use 'morhetz/gruvbox'
+  use 'windwp/nvim-autopairs'
+  use 'tpope/vim-surround'
+  use 'morhetz/gruvbox'
 end)
 
 local lsp_flags = {
@@ -17,7 +30,7 @@ vim.g.coq_settings = { auto_start = 'shut-up' }
 
 local coq = require "coq"
 local lspconfig = require "lspconfig"
-local servers = { "clangd" }
+local servers = { "clangd", "tsserver", "gopls" }
 for _, s in ipairs(servers) do
     lspconfig[s].setup(coq.lsp_ensure_capabilities {})
 end
@@ -49,5 +62,7 @@ vim.keymap.set('n', 'gr', builtin.lsp_references, {})
 vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
 vim.keymap.set('n', 'gi', builtin.lsp_implementations, {})
 vim.keymap.set('n', 'gy', builtin.lsp_type_definitions, {})
+
+require("nvim-autopairs").setup{}
 
 vim.cmd('source ~/.config/nvim/set.vim')
